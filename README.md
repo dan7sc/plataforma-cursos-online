@@ -8,7 +8,8 @@ Pré-Requisitos:
 * IDE para desenvolvimento Java (usarei IntelliJ)
 * Git
 * Conta no GitHub
-* Passo-a-Passo
+
+Passo-a-Passo:
 1. Vamos ABSTRAIR o DOMÍNIO Bootcamp e MODELAR seus ATRIBUTOS E MÉTODOS
 2. Criaremos as CLASSES: Bootcamp, Cursos, Mentorias e Devs e vamos relaciona-las
 3. As CLASSES Curso, Mentoria e Devs também serão MODELADOS, ou seja, criaremos seus ATRIBUTOS E MÉTODOS
