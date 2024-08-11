@@ -1,4 +1,6 @@
+import dominio.Bootcamp;
 import dominio.Curso;
+import dominio.Dev;
 import dominio.Mentoria;
 
 import java.time.LocalDate;
@@ -23,5 +25,33 @@ public class Main {
         System.out.println(curso1);
         System.out.println(curso2);
         System.out.println(mentoria1);
+
+        Bootcamp bootcamp = new Bootcamp();
+        bootcamp.setNome("Bootcamp Java Developer");
+        bootcamp.setDescricao("Desenvolvimento usando Java");
+        bootcamp.getConteudos().add(curso1);
+        bootcamp.getConteudos().add(curso2);
+        bootcamp.getConteudos().add(mentoria1);
+
+        Dev danDev = new Dev();
+        danDev.setNome("Dan");
+        danDev.inscreverBootcamp(bootcamp);
+        System.out.println("Conteudos Inscritos " + danDev.getNome() + ": " + danDev.getConteudosInscritos());
+        danDev.progredir();
+        danDev.progredir();
+        System.out.println("Conteudos Inscritos " + danDev.getNome() + ": " + danDev.getConteudosInscritos());
+        System.out.println("Conteudos Concluidos :" + danDev.getNome() + ": " + danDev.getConteudosConcluidos());
+        System.out.println("XP: " + danDev.calcularTotalXp());
+
+        Dev jinDev = new Dev();
+        jinDev.setNome("Jin");
+        jinDev.inscreverBootcamp(bootcamp);
+        System.out.println("Conteudos Inscritos " + jinDev.getNome() + ": " + jinDev.getConteudosInscritos());
+        jinDev.progredir();
+        jinDev.progredir();
+        jinDev.progredir();
+        System.out.println("Conteudos Inscritos " + jinDev.getNome() + ": " + jinDev.getConteudosInscritos());
+        System.out.println("Conteudos Concluidos :" + jinDev.getNome() + ": " + jinDev.getConteudosConcluidos());
+        System.out.println("XP: " + jinDev.calcularTotalXp());
     }
 }
